@@ -18,17 +18,14 @@ int main()
 	cin >> firstRow >> secondRow >> thirdRow;
 
 	// Операция сравнения, которая выполняет поиск минимальной строки
-	if ((firstRow < secondRow) && (firstRow < thirdRow)) {
+	if ((firstRow <= secondRow) && (firstRow <= thirdRow)) {
 		cout << firstRow << endl;
 	}
-	else if ((secondRow < firstRow) && (secondRow < thirdRow)) {
+	else if ((secondRow <= firstRow) && (secondRow <= thirdRow)) {
 		cout << secondRow << endl;
 	}
-	else if ((thirdRow < firstRow) && (thirdRow < secondRow)) {
-		cout << thirdRow << endl;
-	}
 	else {
-		cout << "Error" << endl;
+		cout << thirdRow << endl;
 	}
 
 	system("PAUSE");
