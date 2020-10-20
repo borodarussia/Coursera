@@ -31,5 +31,7 @@ int main()
 		cout << "Error" << endl;
 	}
 
+	system("PAUSE");
+
 	return 0;
 }

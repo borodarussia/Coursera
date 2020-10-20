@@ -6,6 +6,7 @@
 int main()
 {
     std::cout << "Hello, this is for tasks from Coursera" << std::endl;
+    system("PAUSE");
     return 0;
 }
 

@@ -53,6 +53,8 @@ int main()
     else {
         cout << "Root for this initial data not found" << endl;
     }
+    
+    system("PAUSE");
 
     return 0;
 }
