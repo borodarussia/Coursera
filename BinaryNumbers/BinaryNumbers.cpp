@@ -1,5 +1,5 @@
 // На вход дано целое положительное число N.
-// его в двоичной системе счисления без ведущих нулей.
+// Выведите его в двоичной системе счисления без ведущих нулей.
 
 
 #include <iostream>
@@ -9,20 +9,24 @@ using namespace std;
 int main()
 {
     int decimaValue;
-    string binaryValue;
+    string binaryValueReverse = "";
     cin >> decimaValue;
-    while (decimaValue > 0) {
-        if (decimaValue % 2 == 1)
+    while (decimaValue > 1) {
+        if (decimaValue % 2 == 0)
         {
-            binaryValue += "1";
+            binaryValueReverse += "0";
         }
         else {
-            binaryValue += "0";
+            binaryValueReverse += "1";
         }
-        decimaValue = decimaValue / 2;
+        decimaValue /= 2;
     }
 
-    cout << binaryValue << endl;
+    binaryValueReverse += "1";
+
+    for (int i = binaryValueReverse.length() - 1; i >= 0; --i) {
+        cout << binaryValueReverse[i];
+    }
 
     return 0;
 }
